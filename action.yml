@@ -1,0 +1,12 @@
+name: DevOps Lab Greeting
+description: Print a greeting and expose it as a workflow output
+inputs:
+  name:
+    description: Person to greet
+    required: true
+outputs:
+  greeting:
+    description: The generated greeting
+runs:
+  using: node24
+  main: dist/index.js
